@@ -1,0 +1,30 @@
+.conversations {
+	flex: 1;
+	overflow-y: auto;
+	margin-top: 12px;
+	border-bottom: 1px solid var(--border-color);
+
+	.conversationItem {
+		display: flex;
+		align-items: center;
+		height: 32px;
+		cursor: pointer;
+		font-size: 12px;
+
+		.title {
+			margin: 0 8px;
+			flex: 1;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+
+		.deleteIcon {
+			margin-left: 6px;
+		}
+	}
+
+	.conversationItemActive {
+		background: var(--border-color-active);
+	}
+}

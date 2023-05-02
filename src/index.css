@@ -1,0 +1,28 @@
+:root {
+  --border-color: #5f5d5d;
+  --border-color-active: #717070;
+  --dark-text-color: #e8e3e3;
+  --border-radius: 4px;
+}
+
+@font-face {
+  font-family: "仓耳渔阳体 W05";
+  font-weight: 400;
+  src: url("@/assets/font/TsangerYuYangT_W02_W02.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "阿里巴巴普惠体";
+  font-weight: 400;
+  src: url("@/assets/font/Alibaba_PuHuiTi_2.0_55_Regular_55_Regular.ttf");
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-size: 13px;
+  color: var(--dark-text-color);
+  font-family: '阿里巴巴普惠体', '仓耳渔阳体 W05', Avenir, Helvetica, Arial, sans-serif;
+}

@@ -1,0 +1,61 @@
+.sidebar {
+	display: flex;
+	flex-direction: column;
+	width: 220px;
+	background: #202123;
+	box-sizing: border-box;
+	padding: 12px 6px 0;
+	.newChatWrap {
+		display: flex;
+		align-items: center;
+		color: var(--dark-text-color);
+		.newChatBtn {
+			flex: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			height: 32px;
+			border: 1px solid var(--border-color);
+			box-sizing: border-box;
+			border-radius: var(--border-radius);
+			cursor: pointer;
+			.text {
+				margin-left: 12px;
+			}
+			&:hover {
+				border: 1px solid var(--border-color-active);
+			}
+		}
+		.uploadBtn {
+			margin-left: 8px;
+			width: 32px;
+			height: 32px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid var(--border-color);
+			box-sizing: border-box;
+			border-radius: var(--border-radius);
+			cursor: pointer;
+			&:hover {
+				border: 1px solid var(--border-color-active);
+			}
+		}
+	}
+	.chatSearch {
+		border: 1px solid var(--border-color);
+		box-sizing: border-box;
+		border-radius: var(--border-radius);
+		width: 100%;
+		cursor: pointer;
+		height: 32px;
+		background: none;
+		outline: none;
+		margin-top: 6px;
+		padding: 0 12px;
+		color: var(--dark-text-color);
+		&:hover {
+			border: 1px solid var(--border-color-active);
+		}
+	}
+}

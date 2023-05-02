@@ -1,0 +1,37 @@
+.editor {
+	height: 140px;
+	background: #34353f;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	.stopBtn {
+		margin-left: 8px;
+		padding: 0 24px;
+		line-height: 32px;
+		border: 1px solid var(--border-color);
+		box-sizing: border-box;
+		border-radius: var(--border-radius);
+		cursor: pointer;
+		&:hover {
+			border: 1px solid var(--border-color-active);
+		}
+	}
+	input {
+		width: 500px;
+		margin-top: 12px;
+		height: 32px;
+		outline: none;
+		background: none;
+		color: var(--dark-text-color);
+		border: 1px solid var(--border-color);
+		padding: 0 12px;
+		border-radius: 6px;
+		&:hover {
+			border: 1px solid var(--border-color-active);
+		}
+		&:focus {
+			border: 2px solid var(--border-color-active);
+		}
+	}
+}
