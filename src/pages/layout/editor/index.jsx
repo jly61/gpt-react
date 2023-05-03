@@ -24,26 +24,26 @@ const Editor = () => {
 			// 		temperature: 0.7
 			// 	}
 			// })
-			// axios({
-			// 	method: 'get',
-			// 	url: 'http://101.42.1.176/auth/github/redirect',
-			// 	data: {
-			// 		email: 'wei.li@discovery.wang',
-			// 		pass:  '123456'
-			// 	}
-			// })
-			fetch('http://101.42.1.176/', {
-				method: 'POST',
-				mode: 'cors',
-				headers: {
-					"Content-type": "application/json; charset=UTF-8",
-				},
-				body: JSON.stringify({
+			axios({
+				method: 'post',
+				url: 'http://101.42.1.176',
+				data: {
 					email: 'wei.li@discovery.wang',
 					pass:  '123456'
-				}),
-				credentials: "include"
-			}).then(res => {})
+				}
+			})
+			// fetch('http://101.42.1.176/', {
+			// 	method: 'POST',
+			// 	mode: 'cors',
+			// 	headers: {
+			// 		"Content-type": "application/json; charset=UTF-8",
+			// 	},
+			// 	body: JSON.stringify({
+			// 		email: 'wei.li@discovery.wang',
+			// 		pass:  '123456'
+			// 	}),
+			// 	credentials: "include"
+			// }).then(res => {})
 		}
 	}
 
