@@ -25,7 +25,7 @@ const Editor = () => {
 			// 	}
 			// })
 			axios({
-				method: 'post',
+				method: 'get',
 				url: 'http://101.42.1.176',
 				data: {
 					email: 'wei.li@discovery.wang',
