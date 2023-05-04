@@ -22,6 +22,7 @@ const Editor = () => {
 				method: 'POST',
 				url: 'https://api.openai.com/v1/chat/completions',
 				headers: {
+					// Authorization: 'Bearer ' + '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',
 					Authorization: 'Bearer ' + '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',
 				},
 				data: {
