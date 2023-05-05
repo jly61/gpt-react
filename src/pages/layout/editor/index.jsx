@@ -20,9 +20,10 @@ const Editor = () => {
 			// 回车键被按下
 			axios({
 				method: 'POST',
-				url: 'https://api.openai.com/v1/chat/completions',
+				// url: 'https://api.openai.com/v1/chat/completions',
+				url: 'https://snowfalls.top/v1/chat/completions',
 				headers: {
-					Authorization: 'Bearer ' + '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',
+					Authorization: 'Bearer ' + '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',
 					// Authorization: 'Bearer ' + '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',
 				},
 				data: {
